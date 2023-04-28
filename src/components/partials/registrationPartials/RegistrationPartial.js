@@ -6,26 +6,28 @@ const RegistrationPartial = () => {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+          
+        
           <BackArrow/>
           <h2 className="text-center my-4">Sign up</h2>
-          <form>
-            <div className="form-group">
-              <label htmlFor="name">NAME</label>
-              <input type="text" className="form-control" id="name" placeholder="Full name" />
+          <form method="post">
+            <div className="input-field-group">
+              <label>NAME</label>
+              <input type="text" className="input-field" placeholder="Full name" />
             </div>
-            <div className="form-group">
-              <label htmlFor="email">EMAIL</label>
-              <input type="email" className="form-control" id="email" placeholder="Email" />
+            <div className="input-field-group">
+              <label>EMAIL</label>
+              <input type="email" className="input-field" placeholder="Email" />
             </div>
-            <div className="form-group">
-              <label htmlFor="password">PASSWORD</label>
-              <input type="password" className="form-control" id="password" placeholder="Password" />
+            <div className="input-field-group">
+              <label>PASSWORD</label>
+              <input type="password" className="input-field" placeholder="Password" />
             </div>
-            <div className="form-group">
-              <label htmlFor="confirmPassword">CONFIRM PASSWORD</label>
-              <input type="password" className="form-control" id="confirmPassword" placeholder="Confirm password" />
+            <div className="input-field-group">
+              <label>CONFIRM PASSWORD</label>
+              <input type="password" className="input-field" placeholder="Confirm password" />
             </div>
-            <button id="BigBlackButton" className="btn btn-dark btn-block">Sign Up</button>
+            <button className="BigBlackButton" type="submit">Sign Up</button>
           </form>
           <p className="text-center my-2">Already have an account?</p>
           {/* Add SIGN IN and links to FACEBOOK, etc. */}

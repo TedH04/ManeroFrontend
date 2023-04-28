@@ -3,13 +3,14 @@
     margin: 0 auto;
   }
 
-
-
-#btn.btn-dark.btn-block{
-  color: coral;
-
-}
-
-#BigBlackButton{
-    width: 500px;
+.BigBlackButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: $color-white;
+  margin-top: 2vh;
+  width: 89vw;
+  height: 7vh;
+  border-radius: 25px;
+  background-color: $color-main;
 }
