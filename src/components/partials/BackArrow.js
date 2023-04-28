@@ -1,7 +1,7 @@
 //Denna component är för backbutton "<", som används på många olika sidor, därför ingen egen partial.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from "react"
-const BackButton = () => {
+const BackArrow = () => {
     return(
         <div className="back-button">
             <FontAwesomeIcon icon="fa-solid fa-chevron-left" />
@@ -9,4 +9,4 @@ const BackButton = () => {
     )
 };
 
-export default BackButton;
+export default BackArrow;
