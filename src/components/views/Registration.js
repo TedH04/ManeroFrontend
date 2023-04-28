@@ -1,5 +1,5 @@
 //imports
-import RegistrationPartial from "../partials/registrationPartials/RegistartionPartial";
+import RegistrationPartial from "../partials/registrationPartials/RegistrationPartial";
 import SocialMediaPartial from "../partials/registrationPartials/SocialMediaPartial"
 
 
