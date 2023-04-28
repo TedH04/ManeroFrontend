@@ -1,4 +1,6 @@
 //imports
+import RegistrationPartial from "../partials/registrationPartials/RegistartionPartial";
+import SocialMediaPartial from "../partials/registrationPartials/SocialMediaPartial"
 
 
 const Registration = () => {
@@ -6,10 +8,11 @@ const Registration = () => {
     <>
     
 
-        <registrationPartial/>
+        <RegistrationPartial/>
+        <SocialMediaPartial/>
 
 
     </>
     )
 }
-export default Registration
+export default Registration;

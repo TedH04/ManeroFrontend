@@ -1,5 +1,8 @@
 import React from "react";
 
+
+
+/*Koppling för att registrera/logga in med sociala medier*/
 const SocialMediaPartial = () => {
     return (
         <div className="">
@@ -8,4 +11,5 @@ const SocialMediaPartial = () => {
             <div><i class="fab fa-google fa-2x" style="color: #dd4b39;"></i></div>
         </div>
     )
-}
+};
+export default SocialMediaPartial;
