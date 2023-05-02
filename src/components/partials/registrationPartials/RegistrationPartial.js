@@ -11,7 +11,6 @@ const RegistrationPartial = () => {
         <div className="RegHeader">
           <BackArrow/>
           <h3>Sign up</h3>
-          <p></p>
           </div>
           
           <VerticalBar/>
