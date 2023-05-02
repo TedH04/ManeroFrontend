@@ -1,5 +1,6 @@
 import React from "react";
 import BackArrow from "../BackArrow";
+import VerticalBar from "../VerticalBar";
 
 const RegistrationPartial = () => {
   return (
@@ -7,8 +8,13 @@ const RegistrationPartial = () => {
       <div className="row justify-content-center">
         <div className="col-12 col-sm-8 col-md-6 col-lg-4">
           
-        
+        <div className="RegHeader">
           <BackArrow/>
+          <h3>Sign up</h3>
+          <p></p>
+          </div>
+          
+          <VerticalBar/>
           <h2 className="text-center my-4">Sign up</h2>
           <form method="post">
             <div className="input-field-group">

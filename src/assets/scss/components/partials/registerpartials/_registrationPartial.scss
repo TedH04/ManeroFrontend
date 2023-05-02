@@ -26,3 +26,16 @@
   font-size: 3vw;
 }
 
+.RegHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+}
+
+.RegHeader h3{
+  font-size: 18px;
+}
+
+
