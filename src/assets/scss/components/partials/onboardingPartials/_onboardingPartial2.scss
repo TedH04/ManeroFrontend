@@ -4,13 +4,13 @@
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-    padding-top: 50vh;
+    padding-top: 60vh; // Move content further down
   
     .welcome-circle {
       background-color: white;
       border-radius: 50%;
-      width: 25rem; // Adjust the width to maintain the circular shape
-      height: 25rem; // Adjust the height to maintain the circular shape
+      width: 25rem; // Increase width for a larger circle
+      height: 23rem; // Increase height for a larger circle
       padding: 1rem;
       position: relative;
       display: flex;
@@ -22,6 +22,7 @@
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 1rem;
+        text-align: center;
       }
   
       .subtext {
@@ -30,12 +31,15 @@
       }
   
       .get-started-btn {
-        background-color: black;
-        color: white;
-        border: none;
-        padding: 0.5rem 2rem;
-        font-size: 1rem;
-        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: $color-white;
+        margin-top: 2vh;
+        width: 50vw;
+        height: 7vh;
+        border-radius: 25px;
+        background-color: $color-main;
       }
   
       &::after {
