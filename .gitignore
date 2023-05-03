@@ -1,5 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# sass fix
+.app.min.css
+.app.min.css.map
+src\assets\scss\app.min.css.map
+src\assets\scss\app.min.css
+
 # dependencies
 /node_modules
 /.pnp
