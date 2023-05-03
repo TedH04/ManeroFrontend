@@ -3,13 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: 100vw;
     height: 100vh;
     padding-top: 60vh; // Move content further down
   
     .welcome-circle {
       background-color: white;
       border-radius: 50%;
-      width: 25rem; // Increase width for a larger circle
+      width: 23rem; // Increase width for a larger circle
       height: 23rem; // Increase height for a larger circle
       padding: 1rem;
       position: relative;
@@ -35,7 +36,7 @@
         margin-left: auto;
         margin-right: auto;
         color: $color-white;
-        margin-top: 2vh;
+        margin-top: 0vh;
         width: 50vw;
         height: 7vh;
         border-radius: 25px;
