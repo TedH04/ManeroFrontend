@@ -1,0 +1,53 @@
+.welcome-section {
+    background-color: #dbe3f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 50vh;
+  
+    .welcome-circle {
+      background-color: white;
+      border-radius: 50%;
+      width: 25rem; // Adjust the width to maintain the circular shape
+      height: 25rem; // Adjust the height to maintain the circular shape
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      .welcome-text {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+  
+      .subtext {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+  
+      .get-started-btn {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 0.5rem 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+  
+      &::after {
+        content: "";
+        position: absolute;
+        top: -2.5rem;
+        left: -2.5rem;
+        width: calc(100% + 5rem);
+        height: calc(100% + 5rem);
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+    }
+  }
+  
