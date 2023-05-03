@@ -1,58 +1,55 @@
 .welcome-section {
-    background-color: #dbe3f5;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 60vh; // Move content further down
-  
-    .welcome-circle {
-      background-color: white;
-      border-radius: 50%;
-      width: 23rem; // Increase width for a larger circle
-      height: 23rem; // Increase height for a larger circle
-      padding: 1rem;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  
-      .welcome-text {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-  
-      .subtext {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-      }
-  
-      .get-started-btn {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        color: $color-white;
-        margin-top: 0vh;
-        width: 50vw;
-        height: 7vh;
-        border-radius: 25px;
-        background-color: $color-main;
-      }
-  
-      &::after {
-        content: "";
-        position: absolute;
-        top: -2.5rem;
-        left: -2.5rem;
-        width: calc(100% + 5rem);
-        height: calc(100% + 5rem);
-        border-radius: 50%;
-        border: 2px solid white;
-      }
-    }
-  }
-  
+  background-color: #dbe3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Hide overflowing part of the circle */
+  position: relative; /* Add position relative */
+}
+
+.welcome-circle {
+  background-color: white;
+  border-radius: 50%;
+  min-width: 110%; /* Increase width for a larger circle */
+  min-height: 110%; /* Increase height for a larger circle */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Align content to the lower part of the circle */
+  transform: translateY(-50%); /* Move circle up */
+}
+
+.welcome-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.subtext {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.get-started-btn {
+  color: $color-white;
+  width: 50%; /* Set button width to 50% of the circle width */
+  height: 7vh;
+  border-radius: 25px;
+  background-color: $color-main;
+  margin-bottom: 2rem; /* Add margin for spacing */
+}
+
+&::after {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  width: calc(100% + 5rem);
+  height: calc(100% + 5rem);
+  border-radius: 50%;
+  border: 2px solid white;
+}
