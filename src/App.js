@@ -4,7 +4,7 @@ import Login from './components/views/Login.js';
 function App() {
   return (
     <>
-    <Login/>
+    <Registration/>
     </>
   );
 }
