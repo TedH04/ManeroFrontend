@@ -1,9 +1,9 @@
 import './assets/scss/app.min.css';
-import Onobarding from './components/views/Onboarding';
+import OnboardingPartial2 from './components/partials/onboardingPartials/OnboardingPartial2';
 function App() {
   return (
     <>
-    <Onobarding/>
+    <OnboardingPartial2/>
     </>
   );
 }
