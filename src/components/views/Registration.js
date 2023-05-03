@@ -1,7 +1,6 @@
 //imports
 import RegistrationPartial from "../partials/registrationPartials/RegistrationPartial";
 import SocialMediaPartial from "../partials/registrationPartials/SocialMediaPartial";
-import ManeroLogo from "../partials/ManeroLogo";
 
 
 const Registration = () => {
@@ -9,11 +8,8 @@ const Registration = () => {
     <>
     
 
-        {/* <RegistrationPartial/>
-        <SocialMediaPartial/> */}
-        <ManeroLogo/>
-
-
+        <RegistrationPartial/>
+        <SocialMediaPartial/>
     </>
     )
 }
