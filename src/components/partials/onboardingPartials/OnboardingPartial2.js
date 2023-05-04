@@ -4,7 +4,7 @@ import PageIndicator from "../PageIndicator";
 
 const OnboardingPartial2 = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [textVersion, setTextVersion] = useState(1);
+  const [textVersion, setTextVersion] = useState(0);
 
   const texts = [
     { welcome: "Welcome to Manero", subtext: "Please enjoy our store" },
