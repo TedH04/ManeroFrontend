@@ -1,5 +1,5 @@
 //imports
-import SocialMediaPartial from "../partials/registrationPartials/SocialMediaPartial";
+import SocialMediaPartial from "../partials/SocialMediaPartial";
 import InputBoxPartial from "../partials/InputBoxPartial";
 import BackArrow from "../partials/BackArrow";
 import VerticalBar from "../partials/VerticalBar";
@@ -46,7 +46,7 @@ const Registration = () => {
             </form>
 
             <p className="text-center my-2">Already have an account?</p>
-            
+
             {/* Flyttade in i divven, löste spacing vid full screen */}
             <SocialMediaPartial />
           </div>

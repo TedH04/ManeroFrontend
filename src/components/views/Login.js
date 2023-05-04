@@ -1,7 +1,8 @@
 //imports
 import BackArrow from "../partials/BackArrow";
 import VerticalBar from "../partials/VerticalBar";
-import SocialMediaPartial from "../partials/registrationPartials/SocialMediaPartial";
+import SocialMediaPartial from "../partials/SocialMediaPartial";
+import InputBoxPartial from "../partials/InputBoxPartial";
 
 const Login = () => {
   return (
@@ -17,22 +18,16 @@ const Login = () => {
             <VerticalBar />
             <h2 className="text-center my-4">Login</h2>
             <form method="post">
-              <div className="input-field-group">
-                <label>EMAIL</label>
-                <input
-                  type="email"
-                  className="input-field"
-                  placeholder="Email"
-                />
-              </div>
-              <div className="input-field-group">
-                <label>PASSWORD</label>
-                <input
-                  type="password"
-                  className="input-field"
-                  placeholder="Password"
-                />
-              </div>
+              <InputBoxPartial
+                type="Email"
+                className="input-field"
+                placeholder="Email"
+              />
+              <InputBoxPartial
+                type="Password"
+                className="input-field"
+                placeholder="Password"
+              />
               <button className="BigBlackButton" type="submit">
                 Login
               </button>
