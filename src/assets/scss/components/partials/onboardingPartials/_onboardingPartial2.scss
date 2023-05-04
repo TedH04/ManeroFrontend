@@ -1,26 +1,41 @@
-.welcome-section {
-  background-color: #dbe3f5;
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center content horizontally */
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; /* Hide overflowing part of the circle */
-  position: relative; /* Add position relative */
-}
-
-.welcome-circle {
-  background-color: white;
-  border-radius: 50%;
-  min-width: 110%; /* Increase width for a larger circle */
-  min-height: 110%; /* Increase height for a larger circle */
-  position: relative;
+.OnboardingPartial2-Container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end; /* Align content to the lower part of the circle */
-  transform: translateY(-50%); /* Move circle up */
+  background-color: $color-bluegrey;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
+
+
+.circle-3 {
+  height: 475px;
+  width: 475px;
+  border: 4px solid #ffffff;
+  border-radius: 238px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bluegrey;
+  position: absolute;
+  top: 50%;
+
+}
+
+.circle-4 {
+  height: 415px;
+  width: 415px;
+  border-radius: 208px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 
 .welcome-text {
   font-size: 2rem;
@@ -36,20 +51,54 @@
 
 .get-started-btn {
   color: $color-white;
-  width: 50%; /* Set button width to 50% of the circle width */
+  width: 50%;
+  /* Set button width to 50% of the circle width */
   height: 7vh;
   border-radius: 25px;
   background-color: $color-main;
-  margin-bottom: 2rem; /* Add margin for spacing */
+  margin-bottom: 2rem;
+  /* Add margin for spacing */
 }
 
-&::after {
-  content: "";
-  position: absolute;
-  top: -2.5rem;
-  left: -2.5rem;
-  width: calc(100% + 5rem);
-  height: calc(100% + 5rem);
-  border-radius: 50%;
-  border: 2px solid white;
-}
+
+
+
+//Gammal CSS
+
+
+// .welcome-section { //Inte längre relevant
+//   background-color: #dbe3f5;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center; /* Center content horizontally */
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: hidden; /* Hide overflowing part of the circle */
+//   position: relative; /* Add position relative */
+// }
+
+// .welcome-circle { //Inte längre relevant
+//   background-color: white;
+//   border-radius: 50%;
+//   min-width: 110%; /* Increase width for a larger circle */
+//   min-height: 110%; /* Increase height for a larger circle */
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: flex-end; /* Align content to the lower part of the circle */
+//   transform: translateY(-50%); /* Move circle up */
+// }
+
+
+
+// &::after { //Inte längre relevant
+//   content: "";
+//   position: absolute;
+//   top: -2.5rem;
+//   left: -2.5rem;
+//   width: calc(100% + 5rem);
+//   height: calc(100% + 5rem);
+//   border-radius: 50%;
+//   border: 2px solid white;
+// }

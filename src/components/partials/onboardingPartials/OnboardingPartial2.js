@@ -1,3 +1,4 @@
+//Bör uppdateras med koden från OnBoardingPartial2V2
 import React, { useState } from 'react';
 import VerticalBar from "../VerticalBar";
 import PageIndicator from "../PageIndicator";
