@@ -1,11 +1,12 @@
 //imports
-import OnboardingPartial2V2 from "../partials/onboardingPartials/OnboardingPartial4";
+
+import OnboardingPartial2 from "../partials/onboardingPartials/OnboardingPartial2";
 
 const Onboarding = () => {
   return (
     <>
-      <OnboardingPartial2V2 />
-      {/* <OnboardingPartial2/> */}
+    <OnboardingPartial2/>
+
     </>
   );
 };
