@@ -1,6 +1,7 @@
 import React from "react";
 import BackArrow from "../BackArrow";
 import VerticalBar from "../VerticalBar";
+import InputBoxPartial from "../InputBoxPartial";
 
 const RegistrationPartial = () => {
   return (
@@ -24,8 +25,10 @@ const RegistrationPartial = () => {
               />
             </div>
             <div className="input-field-group">
-              <label>EMAIL</label>
-              <input type="email" className="input-field" placeholder="Email" />
+            <label>EMAIL</label>
+              <InputBoxPartial type="email" className="input-field" placeholder="Enter email"/>
+              {/* <label>EMAIL</label>
+              <input type="email" className="input-field" placeholder="Email" /> */}
             </div>
             <div className="input-field-group">
               <label>PASSWORD</label>
