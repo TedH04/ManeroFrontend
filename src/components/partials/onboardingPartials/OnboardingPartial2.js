@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import VerticalBar from "../VerticalBar";
 import PageIndicator from "../PageIndicator";
 
@@ -7,13 +7,21 @@ const OnboardingPartial2 = () => {
   const [textVersion, setTextVersion] = useState(1);
 
   const texts = [
-    { welcome: 'Welcome to Manero', subtext: 'Please enjoy our store' },
-    { welcome: 'Discover Manero', subtext: 'Find your new favorite items' },
-    { welcome: 'Join the Manero Family', subtext: 'Get exclusive deals and offers' },
+    { welcome: "Welcome to Manero", subtext: "Please enjoy our store" },
+    { welcome: "Discover Manero", subtext: "Find your new favorite items" },
+    {
+      welcome: "Join the Manero Family",
+      subtext: "Get exclusive deals and offers",
+    },
   ];
 
   const handleButtonClick = () => {
     setTextVersion((textVersion + 1) % texts.length);
+    if (currentPage < 3) {
+      setCurrentPage(currentPage + 1);
+    } else {
+      setCurrentPage(1);
+    }
   };
 
   return (
@@ -34,9 +42,6 @@ const OnboardingPartial2 = () => {
 };
 
 export default OnboardingPartial2;
-
-
-
 
 // //GAMMAL KOD
 // import React, { useState } from 'react';
@@ -61,9 +66,6 @@ export default OnboardingPartial2;
 // };
 
 // export default OnboardingPartial2;
-
-
-
 
 //GAMMAL KOD
 // //Bör uppdateras med koden från OnBoardingPartial2V2

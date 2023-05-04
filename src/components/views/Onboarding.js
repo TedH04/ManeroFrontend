@@ -5,8 +5,7 @@ import OnboardingPartial2 from "../partials/onboardingPartials/OnboardingPartial
 const Onboarding = () => {
   return (
     <>
-    <OnboardingPartial2/>
-
+      <OnboardingPartial2 />
     </>
   );
 };

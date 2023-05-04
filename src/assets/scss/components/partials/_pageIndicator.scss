@@ -6,11 +6,12 @@
     padding-bottom: 1rem;
   
     .indicator {
-      background-color: black;
-      border-radius: 50%;
+      background-color: white;
+      border-radius: 2vw;
       width: 10px;
-      height: 10px;
+      height: 7px;
       margin: 0 5px;
+      border: 2px solid black;
   
       &.active {
         width: 20px;
