@@ -1,5 +1,5 @@
 //imports
-import OnboardingPartial2 from "../partials/onboardingPartials/OnboardingPartial2";
+import OnboardingPartial1 from "../partials/onboardingPartials/OnboardingPartial1";
 
 
 
@@ -9,7 +9,7 @@ const Onboarding = () => {
     
 
 
-        <OnboardingPartial2/>
+        <OnboardingPartial1/>
         {/* <OnboardingPartial2/> */}
 
 
