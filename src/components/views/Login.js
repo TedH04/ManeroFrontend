@@ -38,11 +38,11 @@ const Login = () => {
               </button>
             </form>
             <p className="text-center my-2">Already have an account?</p>
-            {/* Add SIGN IN and links to FACEBOOK, etc. */}
+            {/* Flyttade in i divven, löste spacing vid full screen */}
+            <SocialMediaPartial />
           </div>
         </div>
       </div>
-      <SocialMediaPartial />
     </>
   );
 };

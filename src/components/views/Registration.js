@@ -17,6 +17,7 @@ const Registration = () => {
 
             <VerticalBar />
             <h2 className="text-center my-4">Sign up</h2>
+
             <form method="post">
               <InputBoxPartial
                 type="text"
@@ -38,16 +39,19 @@ const Registration = () => {
                 className="input-field"
                 placeholder="Confirm Password"
               />
+
               <button className="BigBlackButton" type="submit">
                 Sign Up
               </button>
             </form>
+
             <p className="text-center my-2">Already have an account?</p>
-            {/* Add SIGN IN and links to FACEBOOK, etc. */}
+            
+            {/* Flyttade in i divven, löste spacing vid full screen */}
+            <SocialMediaPartial />
           </div>
         </div>
       </div>
-      <SocialMediaPartial />
     </>
   );
 };
