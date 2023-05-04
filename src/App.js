@@ -4,7 +4,7 @@ import Onboarding from "./components/views/Onboarding";
 function App() {
   return (
     <>
-      <Login />-
+      <Login />
     </>
   );
 }
