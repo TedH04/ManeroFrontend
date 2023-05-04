@@ -1,19 +1,12 @@
 //imports
-import OnboardingPartial2V2 from "../partials/onboardingPartials/OnboardingPartial2V2";
-
-
+import OnboardingPartial2V2 from "../partials/onboardingPartials/OnboardingPartial4";
 
 const Onboarding = () => {
-    return(
+  return (
     <>
-    
-
-
-        <OnboardingPartial2V2/>
-        {/* <OnboardingPartial2/> */}
-
-
+      <OnboardingPartial2V2 />
+      {/* <OnboardingPartial2/> */}
     </>
-    )
-}
+  );
+};
 export default Onboarding;
