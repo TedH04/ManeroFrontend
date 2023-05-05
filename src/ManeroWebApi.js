@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
+import { RegisterUserModel } from "./models/RegisterUserModel";
 
-function FetchData() {
-  const [data, setData] = useState([]);
+export const registerUser = async (RegisterUserModel) => {
+  const apiUrl = "https://manerog4webappbackend.azurewebsites.net/api";
+  console.log("inside Api");
+  const response = await fetch(apiUrl + "/User/SignUp", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(RegisterUserModel),
+  });
+  console.log("api success");
 
-  useEffect(() => {
-    // Fetch data from API
-    const fetchDataFromAPI = async () => {
-      const response = await fetch(
-        "https://manerog4webappbackend.azurewebsites.net/Api/User/SignUp"
-      );
-      const data = await response.json();
-      setData(data);
-    };
+  return response.status;
+};
 
-    fetchDataFromAPI();
-  }, []);
-}
-export default FetchData;
+export const loginUser = async (email, password) => {};

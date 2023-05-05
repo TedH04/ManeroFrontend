@@ -19,12 +19,8 @@ const Login = () => {
             <VerticalBar />
             <h2 className="text-center my-4">Sign in</h2>
             <form method="post">
-              <InputBoxPartial
-                type="Email"
-                className="input-field"
-                placeholder="Email"
-              />
-              <InputBoxPartial
+              <input type="Email" className="input-field" placeholder="Email" />
+              <input
                 type="Password"
                 className="input-field"
                 placeholder="Password"
