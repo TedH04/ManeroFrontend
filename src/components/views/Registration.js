@@ -3,6 +3,7 @@ import SocialMediaPartial from "../partials/SocialMediaPartial";
 import InputBoxPartial from "../partials/InputBoxPartial";
 import BackArrow from "../partials/BackArrow";
 import VerticalBar from "../partials/VerticalBar";
+import { Link, useNavigate } from "react-router-dom";
 
 const Registration = () => {
   return (
@@ -45,9 +46,15 @@ const Registration = () => {
               </button>
             </form>
 
-            <p className="text-center my-2">Already have an account?</p>
+            <p className="text-center my-2">
+              Already have an account? <Link to="/Login">Sign in</Link>
+            </p>
 
-            {/* Flyttade in i divven, löste spacing vid full screen */}
+            {/* Flyttade in i divven, utlösning på full screen */}
+            {/* Flyttade in i divven, utlösning på bing chiling*/}
+            {/* Spelade skinnflöjt, var skönt */}
+            {/* 帮助他们强迫我编码 */}
+
             <SocialMediaPartial />
           </div>
         </div>
