@@ -19,15 +19,21 @@ const Login = () => {
             <VerticalBar />
             <h2 className="text-center my-4">Sign in</h2>
             <form method="post">
-              <input type="Email" className="input-field" placeholder="Email" />
-              <input
-                type="Password"
-                className="input-field"
-                placeholder="Password"
-              />
-              <button className="BigBlackButton" type="submit">
-                Sign in
-              </button>
+              <div className="form-container">
+                <input
+                  type="Email"
+                  className="input-field"
+                  placeholder="Email"
+                />
+                <input
+                  type="Password"
+                  className="input-field"
+                  placeholder="Password"
+                />
+                <button className="BigBlackButton" type="submit">
+                  Sign in
+                </button>
+              </div>
             </form>
             <p className="text-center my-2">
               Don't have an account? <Link to="/Register">Sign up</Link>

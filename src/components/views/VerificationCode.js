@@ -8,69 +8,66 @@ import { AuthContext } from "../../contexts/AuthProvider";
 import { useContext, useRef, useState } from "react";
 
 const VerificationCode = () => {
-  function checkInput(element) {
-    const value = element.textContent.trim();
+  const [inputValues, setInputValues] = useState(Array(5).fill(""));
+
+  function handleInput(event, index) {
+    const value = event.target.value.trim();
     if (value.length === 1 && !isNaN(value)) {
-      element.classList.add("grey");
-    } else {
-      element.classList.remove("grey");
+      const newInputValues = [...inputValues];
+      newInputValues[index] = value;
+      setInputValues(newInputValues);
     }
   }
 
   return (
-    <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-          <div className="RegHeader">
-            <BackArrow />
-            <h3>Verify your phone number</h3>
-          </div>
-
-          <h2 className="text-center my-4">Enter your OTP here.</h2>
-          <form method="post">
-            <div class="cirleOTP-container">
-              <div
-                class="circleOTP"
-                contenteditable="true"
-                maxlength="1"
-                oninput="checkInput(this)"
-              ></div>
-              <div
-                class="circleOTP"
-                contenteditable="true"
-                maxlength="1"
-                oninput="checkInput(this)"
-              ></div>
-              <div
-                class="circleOTP"
-                contenteditable="true"
-                maxlength="1"
-                oninput="checkInput(this)"
-              ></div>
-              <div
-                class="circleOTP"
-                contenteditable="true"
-                maxlength="1"
-                oninput="checkInput(this)"
-              ></div>
-              <div
-                class="circleOTP"
-                contenteditable="true"
-                maxlength="1"
-                oninput="checkInput(this)"
-              ></div>
-            </div>
-
-            <button className="BigBlackButton" type="submit">
-              Verify
-            </button>
-          </form>
-          <p className="text-center my-2">
-            Didn't receive the OTP? <Link to="/NumberReg">Resend.</Link>
-          </p>
-        </div>
+    <>
+      <div className="RegHeader">
+        <BackArrow />
+        <h3>Verify your phone number</h3>
       </div>
-    </div>
+      <div className="mycirclecontainer">
+        <h2 className="text-center my-4">Enter your OTP here.</h2>
+
+        <form method="post">
+          <div className="cirleOTP-container">
+            {inputValues.map((value, index) => (
+              <div className={`circleOTP ${value ? "filled" : ""}`} key={index}>
+                <input
+                  type="text"
+                  maxLength="1"
+                  value={value}
+                  onChange={(e) => handleInput(e, index)}
+                />
+              </div>
+            ))}
+          </div>
+          {/* </div>
+            <div className="cirleOTP-container">
+              <div className="circleOTP">
+                <input type="text" maxLength="1" onInput={handleInput} />
+              </div>
+              <div className="circleOTP">
+                <input type="text" maxLength="1" onInput={handleInput} />
+              </div>
+              <div className="circleOTP">
+                <input type="text" maxLength="1" onInput={handleInput} />
+              </div>
+              <div className="circleOTP">
+                <input type="text" maxLength="1" onInput={handleInput} />
+              </div>
+              <div className="circleOTP">
+                <input type="text" maxLength="1" onInput={handleInput} />
+              </div>
+            </div> */}
+          <button className="BigBlackButton" type="submit">
+            Verify
+          </button>
+        </form>
+        <p className="text-center my-2">
+          Didn't receive the OTP? <Link to="/NumberReg">Resend.</Link>
+        </p>
+      </div>
+    </>
   );
 };
 
