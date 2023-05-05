@@ -5,16 +5,20 @@ import Onboarding from "./components/views/Onboarding";
 import Registration from "./components/views/Registration";
 import Welcome from "./components/views/Welcome";
 import AuthProvider from "./contexts/AuthProvider";
+import NumberRegistration from "./components/views/NumberRegistration";
+import VerificationCode from "./components/views/VerificationCode";
 //Startar på welcome -> Onboarding -> Login -> Registration
 
 function App() {
   return (
     <AuthProvider>
       <Routes>
-        <Route exact path="/" element={<Welcome />} />
+        <Route exact path="/" element={<VerificationCode />} />
         <Route path="/Onboarding" element={<Onboarding />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Registration />} />
+        <Route path="/NumberReg" element={<NumberRegistration />} />
+        <Route path="/Verification" element={<VerificationCode />} />
       </Routes>
     </AuthProvider>
   );

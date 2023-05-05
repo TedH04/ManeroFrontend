@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { RegisterUserModel } from "./models/RegisterUserModel";
+const apiUrl = "https://manerog4webappbackend.azurewebsites.net/api";
 
 export const registerUser = async (RegisterUserModel) => {
-  const apiUrl = "https://manerog4webappbackend.azurewebsites.net/api";
   console.log("inside Api");
   const response = await fetch(apiUrl + "/User/SignUp", {
     method: "POST",
@@ -16,4 +16,6 @@ export const registerUser = async (RegisterUserModel) => {
   return response.status;
 };
 
-export const loginUser = async (email, password) => {};
+export const loginUser = async (email, password) => {
+  const response = await fetch(apiUrl + "/User/SignIn");
+};
