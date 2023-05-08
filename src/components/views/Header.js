@@ -1,37 +1,45 @@
-import React, { useState } from 'react';
-import { BiMenu } from 'react-icons/bi';
-import { FaShoppingCart } from 'react-icons/fa';
+import React, { useState } from "react";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { SidebarData } from "../Navigation/SidebarData";
+import { IconContext } from "react-icons";
 
-const Header = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
+function Navbar() {
+  const [sidebar, setSidebar] = useState(false);
 
-  const toggleSidebar = () => {
-    setShowSidebar(!showSidebar);
-  };
+  const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <div onClick={toggleSidebar} className="navbar-toggler">
-            <BiMenu size={30} />
-          </div>
-          <div className="navbar-brand mx-auto">Manero</div>
-          <div className="cart-icon">
-            <FaShoppingCart size={24} />
-          </div>
-          <div
-            className={`sidebar${showSidebar ? ' show' : ''}`}
-            onClick={toggleSidebar}
-          >
-            <h1>Option 1</h1>
-            <h1>Option 2</h1>
-            <h1>Option 3</h1>
-          </div>
+    <>
+      <IconContext.Provider value={{ color: "undefined" }}>
+        <div className="navbar">
+          <Link to="#" className="menu-bars">
+            <FaIcons.FaBars onClick={showSidebar} />
+          </Link>
         </div>
-      </nav>
-    </header>
+        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu-items" onClick={showSidebar}>
+            <li className="navbar-toggle">
+              <Link to="#" className="menu-bars">
+                <AiIcons.AiOutlineClose />
+              </Link>
+            </li>
+            {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </IconContext.Provider>
+    </>
   );
-};
+}
 
-export default Header;
+export default Navbar;
