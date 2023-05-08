@@ -12,10 +12,14 @@
 //Partials
 @import "./components/partials/registerpartials/registrationPartial";
 @import "./components/partials/registerpartials/socialMediaPartial";
+@import "./components/partials/pageIndicator";
+
+//Views
 @import "./components/views/welcome";
 @import "./components/views/onboarding";
 @import "./components/views/verificationCode";
-@import "./components/partials/pageIndicator";
+@import "./components/views/search";
+
 
 
 

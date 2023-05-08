@@ -61,6 +61,26 @@
   font-size: 3rem; /* Adjust the icon size */
 }
 
+.Placeholder187x187 {
+  box-sizing: border-box;
+  opacity: 0.4;
+  width: 187px;
+  height: 187px;
+  background-color: #171c31;
+  color: white;
+  border: 1px solid magenta;
+}
+
+.Placeholder375x170 {
+  box-sizing: border-box;
+  opacity: 0.4;
+  width: 375px;
+  height: 170px;
+  background-color: #171c31;
+  color: white;
+  border: 1px solid orangered;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -126,6 +146,24 @@
     width: 20%;
   }
 }
+.page-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.page-indicators .indicator {
+  background-color: white;
+  border-radius: 2vw;
+  width: 10px;
+  height: 7px;
+  margin: 0 5px;
+  border: 2px solid black;
+}
+.page-indicators .indicator.active {
+  width: 20px;
+}
+
 .Welcome-Container {
   display: flex;
   flex-direction: column;
@@ -278,20 +316,8 @@
   background-color: #dbe3f5;
 }
 
-.page-indicators {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-}
-.page-indicators .indicator {
-  background-color: white;
-  border-radius: 2vw;
-  width: 10px;
-  height: 7px;
-  margin: 0 5px;
-  border: 2px solid black;
-}
-.page-indicators .indicator.active {
-  width: 20px;
+.Search-Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }/*# sourceMappingURL=app.min.css.map */
