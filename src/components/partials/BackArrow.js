@@ -4,7 +4,7 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import React from "react"
 const BackArrow = () => {
     return(
-        <div className="">
+        <div className="backArrow">
             <FontAwesomeIcon icon={faChevronLeft} />
         </div>
     )

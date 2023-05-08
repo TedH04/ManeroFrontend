@@ -4,8 +4,24 @@ import VerticalBar from "../partials/VerticalBar";
 import SocialMediaPartial from "../partials/SocialMediaPartial";
 import InputBoxPartial from "../partials/InputBoxPartial";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthProvider";
+import { useContext, useRef, useState } from "react";
 
 const Login = () => {
+
+  const { signIn } = useContext(AuthContext);
+  const emailRef = useRef();
+  const passwordRef = useRef();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try{
+      await signIn(emailRef.current.value, passwordRef.current.value);
+    }catch{
+
+    }
+  }
+
   return (
     <>
       <div className="container">
@@ -18,21 +34,28 @@ const Login = () => {
 
             <VerticalBar />
             <h2 className="text-center my-4">Sign in</h2>
-            <form method="post">
-              <input type="Email" className="input-field" placeholder="Email" />
-              <input
-                type="Password"
-                className="input-field"
-                placeholder="Password"
-              />
-              <button className="BigBlackButton" type="submit">
-                Sign in
-              </button>
+            <form method="post" onSubmit={handleLogin}>
+              <div className="form-container">
+                <input
+                  type="Email"
+                  className="input-field"
+                  placeholder="Email"
+                  ref={emailRef}
+                />
+                <input
+                  type="Password"
+                  className="input-field"
+                  placeholder="Password"
+                  ref={passwordRef}
+                />
+                <button className="BigBlackButton" type="submit">
+                  Sign in
+                </button>
+              </div>
             </form>
             <p className="text-center my-2">
               Don't have an account? <Link to="/Register">Sign up</Link>
             </p>
-            {/* Flyttade in i divven, löste spacing vid full screen */}
             <SocialMediaPartial />
           </div>
         </div>
