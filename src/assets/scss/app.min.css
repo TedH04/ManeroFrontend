@@ -52,7 +52,7 @@
   align-items: center;
   width: 100%;
   height: 53px; /* Adjust the height as needed */
-  background-color: #ffffff; /* Change the background color as desired */
+  background-color: wheat; /* Change the background color as desired */
   border-top: 1px solid #dbe3f5; /* Add a border at the top if needed */
 }
 
@@ -74,7 +74,7 @@
 .Placeholder375x170 {
   box-sizing: border-box;
   opacity: 0.4;
-  width: 375px;
+  width: 374px;
   height: 170px;
   background-color: #171c31;
   color: white;
@@ -317,7 +317,45 @@
 }
 
 .Search-Container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  width: 375px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.CategoryRowContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.CategoriesScrollable {
+  color: red;
+}
+
+.ScrollingCategories {
+  width: 375px;
+  height: 99px;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.ScrollingCategories div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: wheat;
+  height: 100%;
+  margin: 0 0.25%;
+}
+
+.ScrollingCategories::-webkit-scrollbar {
+  display: none;
+}
+
+.testScroll::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=app.min.css.map */
