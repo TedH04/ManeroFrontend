@@ -1,26 +1,4 @@
-// .Placeholder187x187,
-// .Placeholder375x170 {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border: 1px solid black; /* Add border for better visualization, remove it if not needed */
-// }
-
-// .Placeholder187x187 {
-//   grid-row: span 1;
-//   grid-column: span 1;
-// }
-
-// .Placeholder375x170 {
-//   grid-row: span 1;
-//   grid-column: span 2;
-// }
-
-
 .Placeholder187x187 {
-
-
-
     box-sizing: border-box;
     opacity: 0.400;
     width: 187px;
@@ -28,16 +6,14 @@
     background-color: #171c31;
     color: white;
     border: 1px solid magenta;
-}
-
-.Placeholder375x170 {
-
-
+  }
+  
+  .Placeholder375x170 {
     box-sizing: border-box;
     opacity: 0.400;
-    width: 375px;
+    width: 374px; //Ändrade 375px->374px för att kunna dela på två.
     height: 170px;
     background-color: #171c31;
     color: white;
     border: 1px solid orangered;
-}
+  }

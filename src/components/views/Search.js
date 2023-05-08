@@ -9,25 +9,32 @@ const Search = () => {
   //   const handleLogoClick = () => {
   //     navigate("/Onboarding");
   //   };
-
   return (
     <div className="Search-Container">
-      <div>
-        {/* <ManeroLogo onClick={handleLogoClick} /> */}
-        <div className="row">
-          <div className="Placeholder187x187 col">Dresses</div>
-          <div className="Placeholder187x187 col" >Pants</div>
-        </div>
+      <div className="ScrollingCategories">
+        <div className="CategoriesScrollable">MEN</div>
+        <div className="CategoriesScrollable">WOMEN</div>
+        <div className="CategoriesScrollable">KIDS</div>
+        <div className="CategoriesScrollable">ACCESSORIES</div>
+        <div className="CategoriesScrollable">DRESSES</div>
+        <div className="CategoriesScrollable">PANTS</div>
+        <div className="CategoriesScrollable">SHOES</div>
+        <div className="CategoriesScrollable">T-SHIRTS</div>
 
-        <div className="Placeholder375x170">Accessories</div>
-
-        <div className="row">
-          <div className="Placeholder187x187 col">Shoes</div>
-          <div className="Placeholder187x187 col">T-shirts</div>
-        </div>
-
-        
       </div>
+      <div className="CategoryRowContainer">
+        <div className="Placeholder187x187">Dresses</div>
+        <div className="Placeholder187x187">Pants</div>
+      </div>
+
+      <div className="Placeholder375x170">Accessories</div>
+
+      <div className="CategoryRowContainer">
+        <div className="Placeholder187x187">Shoes</div>
+        <div className="Placeholder187x187">T-shirts</div>
+      </div>
+      <Navbar />
+      {/* <ManeroLogo onClick={handleLogoClick} /> */}
     </div>
   );
 };
