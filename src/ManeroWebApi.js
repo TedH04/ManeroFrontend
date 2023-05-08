@@ -18,14 +18,25 @@ export const registerUser = async (RegisterUserModel) => {
 };
 
 export const loginUser = async (email, password) => {
-  const response = await fetch(apiUrl + "/User/SignIn", {
+  const response = fetch(apiUrl + "/User/SignIn", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(email, password),
-  });
-  console.log("login successfull")
+    body: JSON.stringify({
+      email: email,
+      password: password,  
+    }),
+  })
+  .then(reponse => reponse.text())
+  .then(response => {
+    console.log(response)
+  })
+  .catch(err => console.log(err))
 
-  return response.status;
+  console.log("login successful")
+
+  console.log(response.text());
 };
+
+

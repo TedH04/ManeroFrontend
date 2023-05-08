@@ -1,12 +1,13 @@
 import React from "react";
 import { useState, useEffect, createContext } from "react";
-import { registerUser } from "../ManeroWebApi";
+import { registerUser, loginUser } from "../ManeroWebApi";
 import { RegisterUserModel } from "../models/RegisterUserModel";
 
 export const AuthContext = createContext();
 
 const AuthProvider = (props) => {
   // states, effects o.s.v
+
 
   // Metoder o.s.v
   const signup = async (
@@ -35,10 +36,18 @@ const AuthProvider = (props) => {
     }
   };
 
+  const signIn = async (email, password) => {
+    const result = await loginUser(email, password);
+    if (result.status === 200){
+      console.log(result);
+      return result;
+    }
+  }
+
   return (
     <AuthContext.Provider
       value={{
-        signup,
+        signup, signIn,
       }}
     >
       {props.children}

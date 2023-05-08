@@ -6,14 +6,15 @@ import Navbar from "../partials/Navbar";
 const Welcome = () => {
   const navigate = useNavigate();
 
-  const handleLogoClick = () => {
-    navigate("/Onboarding");
-  };
+//   const handleLogoClick = () => {
+//     navigate("/Onboarding");
+//   };
 
   return (
-    <div className="Welcome-Container">
+    <div className="Search-Container">
       <div>
-        <ManeroLogo onClick={handleLogoClick} />
+        {/* <ManeroLogo onClick={handleLogoClick} /> */}
+        <Navbar/>
       </div>
     </div>
   );
