@@ -1,0 +1,30 @@
+// Header.scss
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 24px;
+}
+
+.navbar-brand {
+  margin-right: auto;
+  font-size: 24px;
+}
+
+.nav-link {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+}

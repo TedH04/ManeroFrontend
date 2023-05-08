@@ -7,13 +7,14 @@ import Welcome from "./components/views/Welcome";
 import AuthProvider from "./contexts/AuthProvider";
 import NumberRegistration from "./components/views/NumberRegistration";
 import VerificationCode from "./components/views/VerificationCode";
+import Header from "./components/views/Header";
 //Startar på welcome -> Onboarding -> Login -> Registration
 
 function App() {
   return (
     <AuthProvider>
       <Routes>
-        <Route exact path="/" element={<VerificationCode />} />
+        <Route exact path="/" element={<Header />} />
         <Route path="/Onboarding" element={<Onboarding />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Registration />} />
