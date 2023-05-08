@@ -41,24 +41,6 @@ const VerificationCode = () => {
               </div>
             ))}
           </div>
-          {/* </div>
-            <div className="cirleOTP-container">
-              <div className="circleOTP">
-                <input type="text" maxLength="1" onInput={handleInput} />
-              </div>
-              <div className="circleOTP">
-                <input type="text" maxLength="1" onInput={handleInput} />
-              </div>
-              <div className="circleOTP">
-                <input type="text" maxLength="1" onInput={handleInput} />
-              </div>
-              <div className="circleOTP">
-                <input type="text" maxLength="1" onInput={handleInput} />
-              </div>
-              <div className="circleOTP">
-                <input type="text" maxLength="1" onInput={handleInput} />
-              </div>
-            </div> */}
           <button className="BigBlackButton" type="submit">
             Verify
           </button>
