@@ -12,27 +12,43 @@
 }
 
 .CategoriesScrollable {
-    color: red;
-}
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    height: 100%;
+    margin: 0 5px; 
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+  
 
-.ScrollingCategories {
+  .selected {
+    background-color: gray !important;
+  }
+  
+
+  .ScrollingCategories {
     width: 375px;
     height: 99px;
     white-space: nowrap;
     position: relative;
     overflow-x: scroll;
     overflow-y: hidden;
-}
+    padding: 10% 0;
+  }
 
 .ScrollingCategories div {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
-    width: 30%;
-    background-color: wheat;
+    background-color: white;
+    font-weight: bold;
     height: 100%;
     margin: 0 0.25%;
+    padding: 0 5px;
 }
 
 .ScrollingCategories::-webkit-scrollbar {
@@ -42,3 +58,4 @@
 .testScroll::-webkit-scrollbar {
     display: none;
 }
+

@@ -1,19 +1,39 @@
 .Placeholder187x187 {
-    box-sizing: border-box;
-    opacity: 0.400;
-    width: 187px;
-    height: 187px;
-    background-color: #171c31;
-    color: white;
-    border: 1px solid magenta;
-  }
-  
-  .Placeholder375x170 {
-    box-sizing: border-box;
-    opacity: 0.400;
-    width: 374px; //Ändrade 375px->374px för att kunna dela på två.
-    height: 170px;
-    background-color: #171c31;
-    color: white;
-    border: 1px solid orangered;
-  }
+  position: relative;
+  box-sizing: border-box;
+  opacity: 0.4;
+  width: 187px;
+  height: 187px;
+  background-color: #171c31;
+  color: white;
+  border: 1px solid white;
+}
+
+.Placeholder375x170 {
+  position: relative;
+  box-sizing: border-box;
+  opacity: 0.4;
+  width: 374px; //Ändrade 375px->374px för att kunna dela på två.
+  height: 170px;
+  background-color: #171c31;
+  color: white;
+  border: 1px solid white;
+}
+
+.Placeholder375x38 {
+  position: relative;
+  box-sizing: border-box;
+  opacity: 0.4;
+  width: 375px;
+  height: 38px;
+  background-color: #171c31;
+  color: white;
+  border: 1px solid white;
+}
+
+.textInsidePlaceholder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px; /* Optional: Add some padding for better appearance */
+}
