@@ -6,6 +6,12 @@
 src\assets\scss\app.min.css.map
 src\assets\scss\app.min.css
 
+# sass fix
+.app.min.css
+.app.min.css.map
+src\assets\scss\app.min.css.map
+src\assets\scss\app.min.css
+
 # dependencies
 /node_modules
 /.pnp
@@ -29,3 +35,4 @@ yarn-debug.log*
 yarn-error.log*
 src/assets/scss/app.min.css
 src/assets/scss/app.min.css.map
+
