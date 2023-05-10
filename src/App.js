@@ -11,6 +11,8 @@ import Search from "./components/views/Search";
 import Header from "./components/views/Header";
 //Startar på welcome -> Onboarding -> Login -> Registration
 
+//test av push
+
 function App() {
   return (
     <AuthProvider>
